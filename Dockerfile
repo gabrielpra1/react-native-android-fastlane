@@ -7,8 +7,5 @@ RUN apt-get update && \
   ruby \
   ruby-dev
 
-# Installing fastlane
-RUN gem install fastlane
-
 # Installing bundle
 RUN gem install bundle
