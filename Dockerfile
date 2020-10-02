@@ -7,8 +7,8 @@ RUN apt-get update && \
     ruby \
     ruby-dev
 
-RUN export LC_ALL=en_US.UTF-8 && \
-    export LANG=en_US.UTF-8
+ENV LC_ALL=en_US.UTF-8
+ENV LANG=en_US.UTF-8
 
 # Installing bundle
 RUN gem install bundle
